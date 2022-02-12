@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.banner {
+	background-image: url("/assets/img/header.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.banner > h1 {
+	color: white;
+	font-weight: bold;
+	padding: 110px 70px;
+}
