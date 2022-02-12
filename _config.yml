@@ -3,4 +3,4 @@ tagline: Een cadeau voor de gehele gemeenschap
 baseurl: duofietsduizel.nl
 paginate: 1
 locale: "nl"
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
