@@ -19,24 +19,22 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Stichting DUO-Fiets Duizel
-tagline: Stichting DUO-Fiets Duizel
-email: duofietsduizel@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
+subtitle: Een cadeau voor de gehele Duizelse gemeenschap
+description: >-
   Het doel van Stichting DUO-Fiets Duizel is om hulpbehoevende (en oudere) mensen
   uit Duizel en de directe omgeving een onbezorgde ochtend/middag te bezorgen 
   door middel van een ritje door de mooie natuur van de Kempen met de DUO-Fietsen 
   samen met onze vrijwilligers.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://duofietsduizel.nl" # the base hostname & protocol for your site, e.g. http://example.com
 locale: "nl"
 
-# Build settings
-theme: minima
+author: Stichting DUO-Fiets Duizel
 
-minima:
-  social_links:
-    facebook: duofietsduizel
-    instagram: duofietsduizel
+socials:
+  facebook: duofietsduizel
+  instagram: duofietsduizel
 
 # Exclude from processing.
 # The following items will not be processed, by default.

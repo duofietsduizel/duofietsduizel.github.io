@@ -1,0 +1,18 @@
+<!-- Navigation -->
+<a class="menu-toggle rounded text-white" href="#">
+    <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper" class="bg-primary">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger text-white" href="/#home">Home</a>
+        </li>
+        {% for thing in site.pages %}
+        {% if thing.layout == 'section' %}
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger text-white" href="/#{{ thing.slug }}">{{ thing.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

@@ -1,0 +1,15 @@
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <ul class="list-inline mb-5">
+            {% for social in site.socials %}
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" target="_blank" href="https://{{ social[0] }}.com/{{ social[1] }}">
+                    <i class="icon-social-{{ social[0] }}"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; {{ site.author }}. Based on <a target="_blank" href="https://startbootstrap.com/template-overviews/stylish-portfolio">Start Bootstrap - Stylish Portfolio</a></p>
+    </div>
+</footer>
