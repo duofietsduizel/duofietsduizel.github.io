@@ -12,7 +12,9 @@ layout: section
                 Klik dan op aanmelden als gast en meld u aan via het aanmeldformulier.
                 Wij komen dan zo snel mogelijk bij u terug.
             </p>
-            <button class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#workInProgressModal">Aanmelden als gast</button>
+            <button class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal"
+                    data-target="#workInProgressModal">Aanmelden als gast
+            </button>
         </div>
         <div class="col-lg-6">
             <h2>Aanmelden als vrijwilliger</h2>
@@ -21,80 +23,234 @@ layout: section
                 Wilt u uw steentje bijdragen?
                 Klik dan op aanmelden als vrijwilliger en meld u aan via het aanmeld formulier.
             </p>
-            <button class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal" data-target="#workInProgressModal">Aanmelden als vrijwilliger</button>
+            <button class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal"
+                    data-target="#aanmeldenVrijwilligerModal">Aanmelden als vrijwilliger
+            </button>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="workInProgressModal" tabindex="-1" role="dialog" aria-labelledby="workInProgressModalTitle" aria-hidden="true">
+<div class="modal fade" id="workInProgressModal" tabindex="-1" role="dialog" aria-labelledby="workInProgressModalTitle"
+     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
-            <form action="https://formspree.io/f/xpzbjbaw" method="POST">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="workInProgressModalTitle">Work in progress</h5>
+            <div class="modal-header">
+                <h5 class="modal-title" id="workInProgressModalTitle">Work in progress</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Momenteel zijn we nog in de opstart-fase met onze stichting.
+                    We zijn nog in afwachting van onze duo-fietsen en op zoek naar sponsoren.
+                </p>
+                <p>
+                    Zodra het mogelijk is om u aan te melden zullen we dat laten weten!
+                </p>
+                <p>
+                    Mocht u ons willen sponsoren, dan kunt u contact met ons opnemen.
+                    Onze contactgegevens kunt u onderaan onze website vinden.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="aanmeldenVrijwilligerModal" tabindex="-1" role="dialog"
+     aria-labelledby="aanmeldenVrijwilligerModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <form class="modal-content p-2 needs-validation" method="post" action="https://formspree.io/f/mpzbyrva" novalidate>
+            <div class="modal-header form-row">
+                <div class="form-group col-10">
+                    <h3 class="modal-title" id="aanmeldenVrijwilligerModalTitle">Aanmelden als vrijwilliger</h3>
+                </div>
+                <div class="form-group col-2">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    <p>
-                        Momenteel zijn we nog in de opstart-fase met onze stichting.
-                        We zijn nog in afwachting van onze duo-fietsen en op zoek naar sponsoren.
-                    </p>
-                    <p>
-                        Zodra het mogelijk is om u aan te melden zullen we dat laten weten!
-                    </p>
-                    <p>
-                        Mocht u ons willen sponsoren, dan kunt u contact met ons opnemen.
-                        Onze contactgegevens kunt u onderaan onze website vinden.
+                <div class="form-group">
+                    <p class="lead">
+                        Lijkt het je leuk om wat voor de Duizelse gemeenschap te doen?
+                        Zou je wel eens een stukje willen gaan fietsen met iemand die dit niet meer zelfstandig kan of
+                        dit graag samen met een ander doet?
+                        We hopen binnenkort 2 duo-fietsen te hebben die we hier dagelijks voor in willen zetten.
+                        Hiervoor zijn we op zoek naar vrijwilligers.
+                        Vul onderstaand formulier in of neem contact met ons op mocht je dit zien zitten!
                     </p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-row">
+                    <div class="form-group col-lg-5">
+                        <label for="aanmeldenVrijwilligerVoornaam">Voornaam</label>
+                        <input type="text" class="form-control" id="aanmeldenVrijwilligerVoornaam"
+                               placeholder="Voornaam" name="voornaam" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw voornaam op
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-7">
+                        <label for="aanmeldenVrijwilligerAchternaam">Achternaam</label>
+                        <input type="text" class="form-control" id="aanmeldenVrijwilligerAchternaam"
+                               placeholder="Achternaam" name="achternaam" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw achternaam op
+                        </div>
+                    </div>
                 </div>
-            </form>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="aanmeldenVrijwilligerAdres">Adres</label>
+                        <input type="text" class="form-control" id="aanmeldenVrijwilligerAdres" placeholder="Adres"
+                               name="adres" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw adres op
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-8">
+                        <label for="aanmeldenVrijwilligerPostcode">Postcode</label>
+                        <input type="text" class="form-control" id="aanmeldenVrijwilligerPostcode"
+                               placeholder="Postcode" name="postcode" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw postcode op
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="aanmeldenVrijwilligerPlaats">Plaats</label>
+                        <input type="text" class="form-control" id="aanmeldenVrijwilligerPlaats" placeholder="Plaats"
+                               name="plaats" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw woonplaats op
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="aanmeldenVrijwilligerTelefoon">Telefoon</label>
+                        <input type="tel" class="form-control" id="aanmeldenVrijwilligerTelefoon" placeholder="Telefoon"
+                               name="telefoon" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw telefoon nummer op
+                        </div>
+                    </div>
+                    <div class="form-group col">
+                        <label for="aanmeldenVrijwilligerEmail">Email</label>
+                        <input type="email" class="form-control" id="aanmeldenVrijwilligerEmail" placeholder="Email"
+                               name="email" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw email adres op
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-8">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value=""
+                                   id="aanmeldenVrijwilligerAkkoord" name="toestemming" required>
+                            <label class="form-check-label" for="aanmeldenVrijwilligerAkkoord">
+                                Ik geef stichting DUO-Fiets Duizel toestemming om de door mij ingevulde gegevens op te
+                                slaan.
+                                Deze gegevens worden alleen gebruikt door onze administratie, en zullen niet gedeeld
+                                worden.
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="maken van foto's en video's" id="aanmeldenVrijwilligerFoto"
+                                   name="toestemming">
+                            <label class="form-check-label" for="aanmeldenVrijwilligerFoto">
+                                Ik geef stichting DUO-Fiets Duizel toestemming om foto's en video's die eventueel
+                                gemaakt worden te gebruiken.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <h5>Geef hier aan welke dagen uw voorkeur hebben</h5>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenVrijwilligerMaandag" value="maandag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenVrijwilligerMaandag">Maandag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenVrijwilligerDinsdag" value="dinsdag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenVrijwilligerDinsdag">Dinsdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenVrijwilligerWoensdag" value="woensdag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenVrijwilligerWoensdag">Woensdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenVrijwilligerDonderdag" value="donderdag" onclick="daySelected()"
+                                   required>
+                            <label class="form-check-label" for="aanmeldenVrijwilligerDonderdag">Donderdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenVrijwilligerVrijdag" value="vrijdag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenVrijwilligerVrijdag">Vrijdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenVrijwilligerWisselend" value="wisselend" onclick="daySelected()"
+                                   required>
+                            <label class="form-check-label" for="aanmeldenVrijwilligerWisselend">Beschikbaar op
+                                wisselende dagen</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer form-row">
+                <button type="submit" class="btn btn-primary">Verzenden</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="successModalTitle">Bedankt</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="successModalMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Sluiten</button>
+            </div>
         </div>
     </div>
 </div>
 
-<!--<div class="modal fade" id="aanmeldenGastModal" tabindex="-1" role="dialog" aria-labelledby="aanmeldenGastModalTitle" aria-hidden="true">-->
-<!--    <div class="modal-dialog modal-dialog-centered" role="document">-->
-<!--        <div class="modal-content">-->
-<!--            <form action="https://formspree.io/f/xpzbjbaw" method="POST">-->
-<!--                <div class="modal-header">-->
-<!--                    <h5 class="modal-title" id="aanmeldenGastModalTitle">Aanmelden als gast</h5>-->
-<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                        <span aria-hidden="true">&times;</span>-->
-<!--                    </button>-->
-<!--                </div>-->
-<!--                <div class="modal-body">-->
-<!--                     TODO-->
-<!--                </div>-->
-<!--                <div class="modal-footer">-->
-<!--                    <button type="submit" class="btn btn-primary">Verzenden</button>-->
-<!--                </div>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-
-<!--<div class="modal fade" id="aanmeldenVrijwilligerModal" tabindex="-1" role="dialog" aria-labelledby="aanmeldenVrijwilligerModalTitle" aria-hidden="true">-->
-<!--    <div class="modal-dialog modal-dialog-centered" role="document">-->
-<!--        <div class="modal-content">-->
-<!--            <form action="https://formspree.io/f/xpzbjbaw" method="POST">-->
-<!--                <div class="modal-header">-->
-<!--                    <h5 class="modal-title" id="aanmeldenVrijwilligerModalTitle">Aanmelden als vrijwilliger</h5>-->
-<!--                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--                        <span aria-hidden="true">&times;</span>-->
-<!--                    </button>-->
-<!--                </div>-->
-<!--                <div class="modal-body">-->
-<!--                    TODO-->
-<!--                </div>-->
-<!--                <div class="modal-footer">-->
-<!--                    <button type="submit" class="btn btn-primary">Verzenden</button>-->
-<!--                </div>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="errorModalTitle">Oeps...</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="errorModalMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</div>
