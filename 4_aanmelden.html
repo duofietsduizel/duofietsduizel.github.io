@@ -13,7 +13,7 @@ layout: section
                 Wij komen dan zo snel mogelijk bij u terug.
             </p>
             <button class="btn btn-primary btn-xl js-scroll-trigger" data-toggle="modal"
-                    data-target="#workInProgressModal">Aanmelden als gast
+                    data-target="#aanmeldenGastModal">Aanmelden als gast
             </button>
         </div>
         <div class="col-lg-6">
@@ -30,33 +30,169 @@ layout: section
     </div>
 </div>
 
-<div class="modal fade" id="workInProgressModal" tabindex="-1" role="dialog" aria-labelledby="workInProgressModalTitle"
-     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="workInProgressModalTitle">Work in progress</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+<div class="modal fade" id="aanmeldenGastModal" tabindex="-1" role="dialog"
+     aria-labelledby="aanmeldenGastModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <form class="modal-content p-2 needs-validation" method="post" action="https://formspree.io/f/mvolwqzp" novalidate>
+            <div class="modal-header form-row">
+                <div class="form-group col-10">
+                    <h3 class="modal-title" id="aanmeldenGastModalTitle">Aanmelden als gast</h3>
+                </div>
+                <div class="form-group col-2">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="form-group">
+                    <p class="lead">
+                        Even fietsen of genieten van de natuur is soms een onmogelijke opgave, wanneer fietsen niet meer zo gemakkelijk gaat.
+                        DUO-Fiets Duizel biedt aan om met u, uw partner of uw ouder een middag te gaan fietsen samen met een vrijwilliger.
+                    </p>
+                    <p class="lead">
+                        We willen in groepsverband gaan fietsen, dit maakt fietsen nog leuker.
+                        Indien gewenst stoppen we voor een pauze.
+                        We drinken natuurlijk een kopje koffie of thee voordat we onze tocht vervolgen.
+                    </p>
+                    <p class="lead">
+                        De kosten voor de rit inclusief het koffie kopje (met koekje) zijn € 7,00 per gast te voldoen bij vertrek.
+                    </p>
+                </div>
             </div>
             <div class="modal-body">
-                <p>
-                    Momenteel zijn we nog in de opstart-fase met onze stichting.
-                    We zijn nog in afwachting van onze duo-fietsen en op zoek naar sponsoren.
-                </p>
-                <p>
-                    Zodra het mogelijk is om u aan te melden zullen we dat laten weten!
-                </p>
-                <p>
-                    Mocht u ons willen sponsoren, dan kunt u contact met ons opnemen.
-                    Onze contactgegevens kunt u onderaan onze website vinden.
-                </p>
+                <div class="form-row">
+                    <div class="form-group col-lg-5">
+                        <label for="aanmeldenGastVoornaam">Voornaam *</label>
+                        <input type="text" class="form-control" id="aanmeldenGastVoornaam"
+                               placeholder="Voornaam" name="voornaam" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw voornaam op
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-7">
+                        <label for="aanmeldenGastAchternaam">Achternaam *</label>
+                        <input type="text" class="form-control" id="aanmeldenGastAchternaam"
+                               placeholder="Achternaam" name="achternaam" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw achternaam op
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="aanmeldenGastAdres">Adres *</label>
+                        <input type="text" class="form-control" id="aanmeldenGastAdres" placeholder="Adres"
+                               name="adres" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw adres op
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-8">
+                        <label for="aanmeldenGastPostcode">Postcode *</label>
+                        <input type="text" class="form-control" id="aanmeldenGastPostcode"
+                               placeholder="Postcode" name="postcode" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw postcode op
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="aanmeldenGastPlaats">Plaats *</label>
+                        <input type="text" class="form-control" id="aanmeldenGastPlaats" placeholder="Plaats"
+                               name="plaats" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw woonplaats op
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="aanmeldenGastTelefoon">Telefoon *</label>
+                        <input type="tel" class="form-control" id="aanmeldenGastTelefoon" placeholder="Telefoon"
+                               name="telefoon" required>
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw telefoon nummer op
+                        </div>
+                    </div>
+                    <div class="form-group col">
+                        <label for="aanmeldenGastEmail">Email</label>
+                        <input type="email" class="form-control" id="aanmeldenGastEmail" placeholder="Email"
+                               name="email">
+                        <div class="invalid-feedback">
+                            Geef a.u.b. uw email adres op
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="aanmeldenGastOpmerking">Moeten we ergens rekening mee houden?</label>
+                        <textarea type="textarea" class="form-control" id="aanmeldenGastOpmerking" placeholder=""
+                                  name="opmerking">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-8">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" value=""
+                                   id="aanmeldenGastAkkoord" name="toestemming" required>
+                            <label class="form-check-label" for="aanmeldenGastAkkoord">
+                                Ik geef stichting DUO-Fiets Duizel toestemming om de door mij ingevulde gegevens op te
+                                slaan.
+                                Deze gegevens worden alleen gebruikt door onze administratie, en zullen niet gedeeld
+                                worden. *
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="maken van foto's en video's" id="aanmeldenGastFoto"
+                                   name="toestemming">
+                            <label class="form-check-label" for="aanmeldenGastFoto">
+                                Ik geef stichting DUO-Fiets Duizel toestemming om foto's en video's die eventueel
+                                gemaakt worden te gebruiken.
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <h5>Geef hier aan welke dagen uw voorkeur hebben</h5>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenGastMaandag" value="maandag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenGastMaandag">Maandag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenGastDinsdag" value="dinsdag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenGastDinsdag">Dinsdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenGastWoensdag" value="woensdag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenGastWoensdag">Woensdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenGastDonderdag" value="donderdag" onclick="daySelected()"
+                                   required>
+                            <label class="form-check-label" for="aanmeldenGastDonderdag">Donderdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenGastVrijdag" value="vrijdag" onclick="daySelected()" required>
+                            <label class="form-check-label" for="aanmeldenGastVrijdag">Vrijdag</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox-day" type="checkbox" name="dagen"
+                                   id="aanmeldenGastWisselend" value="wisselend" onclick="daySelected()"
+                                   required>
+                            <label class="form-check-label" for="aanmeldenGastWisselend">Geen voorkeur</label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+            <div class="modal-footer form-row">
+                <button type="submit" class="btn btn-primary">Verzenden</button>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 
@@ -87,7 +223,7 @@ layout: section
             <div class="modal-body">
                 <div class="form-row">
                     <div class="form-group col-lg-5">
-                        <label for="aanmeldenVrijwilligerVoornaam">Voornaam</label>
+                        <label for="aanmeldenVrijwilligerVoornaam">Voornaam *</label>
                         <input type="text" class="form-control" id="aanmeldenVrijwilligerVoornaam"
                                placeholder="Voornaam" name="voornaam" required>
                         <div class="invalid-feedback">
@@ -95,7 +231,7 @@ layout: section
                         </div>
                     </div>
                     <div class="form-group col-lg-7">
-                        <label for="aanmeldenVrijwilligerAchternaam">Achternaam</label>
+                        <label for="aanmeldenVrijwilligerAchternaam">Achternaam *</label>
                         <input type="text" class="form-control" id="aanmeldenVrijwilligerAchternaam"
                                placeholder="Achternaam" name="achternaam" required>
                         <div class="invalid-feedback">
@@ -105,7 +241,7 @@ layout: section
                 </div>
                 <div class="form-row">
                     <div class="form-group col">
-                        <label for="aanmeldenVrijwilligerAdres">Adres</label>
+                        <label for="aanmeldenVrijwilligerAdres">Adres *</label>
                         <input type="text" class="form-control" id="aanmeldenVrijwilligerAdres" placeholder="Adres"
                                name="adres" required>
                         <div class="invalid-feedback">
@@ -115,7 +251,7 @@ layout: section
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-8">
-                        <label for="aanmeldenVrijwilligerPostcode">Postcode</label>
+                        <label for="aanmeldenVrijwilligerPostcode">Postcode *</label>
                         <input type="text" class="form-control" id="aanmeldenVrijwilligerPostcode"
                                placeholder="Postcode" name="postcode" required>
                         <div class="invalid-feedback">
@@ -123,7 +259,7 @@ layout: section
                         </div>
                     </div>
                     <div class="form-group col-lg-4">
-                        <label for="aanmeldenVrijwilligerPlaats">Plaats</label>
+                        <label for="aanmeldenVrijwilligerPlaats">Plaats *</label>
                         <input type="text" class="form-control" id="aanmeldenVrijwilligerPlaats" placeholder="Plaats"
                                name="plaats" required>
                         <div class="invalid-feedback">
@@ -133,7 +269,7 @@ layout: section
                 </div>
                 <div class="form-row">
                     <div class="form-group col">
-                        <label for="aanmeldenVrijwilligerTelefoon">Telefoon</label>
+                        <label for="aanmeldenVrijwilligerTelefoon">Telefoon *</label>
                         <input type="tel" class="form-control" id="aanmeldenVrijwilligerTelefoon" placeholder="Telefoon"
                                name="telefoon" required>
                         <div class="invalid-feedback">
@@ -141,7 +277,7 @@ layout: section
                         </div>
                     </div>
                     <div class="form-group col">
-                        <label for="aanmeldenVrijwilligerEmail">Email</label>
+                        <label for="aanmeldenVrijwilligerEmail">Email *</label>
                         <input type="email" class="form-control" id="aanmeldenVrijwilligerEmail" placeholder="Email"
                                name="email" required>
                         <div class="invalid-feedback">
@@ -158,7 +294,7 @@ layout: section
                                 Ik geef stichting DUO-Fiets Duizel toestemming om de door mij ingevulde gegevens op te
                                 slaan.
                                 Deze gegevens worden alleen gebruikt door onze administratie, en zullen niet gedeeld
-                                worden.
+                                worden. *
                             </label>
                         </div>
                         <div class="form-check">
