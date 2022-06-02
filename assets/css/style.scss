@@ -138,7 +138,6 @@ header .menu {
     list-style: none;
     text-align: center;
     float: right;
-    width: 600px;
   }
 
   .sidebar-nav li{
@@ -317,7 +316,7 @@ a:hover, a:focus, a:active {
 }
 
 .btn {
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
   font-weight: 700;
 }
 
