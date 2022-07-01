@@ -91,14 +91,14 @@ header .menu {
 }
 
 .masthead {
-  min-height: 30rem;
+  min-height: 50rem;
   position: relative;
   display: table;
   width: 100%;
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-masthead.webp") no-repeat center center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-goals.jpg") no-repeat center 77%;
   background-size: cover;
   color: white;
 }
@@ -330,4 +330,9 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+.bg-goals {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-goals.jpg") no-repeat center 70%;
+  color: white;
 }
