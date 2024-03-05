@@ -1,3 +1,10 @@
 ---
 layout: default
 ---
+{% for thing in site.pages %}
+{% if thing.layout == 'section' %}
+<section class="content-section bg-{{ thing.bg | default: "light" }}" id="{{ thing.slug }}">
+{{ thing.content }}
+</section>
+{% endif %}
+{% endfor %}
