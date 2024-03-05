@@ -98,7 +98,7 @@ header .menu {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-goals.jpg") no-repeat center 77%;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1) 100%), url("../img/bg-goals.jpg") no-repeat center 77%;
   background-size: cover;
   color: white;
 }
@@ -333,7 +333,7 @@ a:hover, a:focus, a:active {
 }
 
 .bg-goals {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-goals.jpg") no-repeat center 70%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-goals.jpg") no-repeat center 70%;
   color: white;
 }
 
